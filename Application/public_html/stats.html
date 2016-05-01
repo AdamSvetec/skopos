@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Account</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles2.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    </head>
+    <body>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a onclick="window.location = 'http://localhost:8383/skopos/profile.html'" href="#" class="navbar-brand" >Skopos</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a onclick="window.location = 'http://localhost:8383/skopos/profile.html'" href="#">Home</a></li>
+                <li class="active"><a href="http://bootsnipp.com/snippets/featured/nav-account-manager" target="_blank">Redeem</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Store
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Heart Surgery</a></li>
+                        <li><a href="#">Eye Surgery</a></li>
+                        <li><a href="#">Plastic Surgery</a></li>
+                    </ul>
+                </li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <strong>Chief Yif</strong>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>Yifei Gao</strong></p>
+                                        <p class="text-left small">yig216@lehigh.edu</p>
+                                        <p class="text-left">
+                                            <a onclick="window.location = 'http://localhost:8383/skopos/stats.html'" href="#" class="btn btn-primary btn-block btn-sm">Account</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a onclick="window.location = 'http://localhost:8383/skopos/index.html'" href="#" class="btn btn-danger btn-block">Log Out</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-sm-6">
+                        <h3>Concentration</h3>  
+                    </div>
+                    <div id="donut-example" style="height: 250px;"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Area of Practice</h3>  
+                </div>
+                <div class="col-md-6">
+                    <div id="bar-example" style="height: 250px;"></div>
+                </div>
+                <div class="col-sm-12">
+                    <h3>Overall Time Commitment</h3>  
+                </div>
+                <div class="col-md-12">
+                    <div id="area-example" style="height: 300px;"></div>
+                </div>
+                <div class="col-sm-12">
+                    <h3>Learning Effectiveness</h3>  
+                </div>
+                <div class="col-md-12">
+                    <div id="line-example" style="height: 300px;"></div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script src="script2.js"></script>
+</html>
+

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles2.css">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a target="_blank" href="#" class="navbar-brand" >Skopos</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a onclick="window.location = 'http://localhost:8383/skopos/profile.html'" href="#">Home</a></li>
+                <li class="active"><a href="http://bootsnipp.com/snippets/featured/nav-account-manager" target="_blank">Redeem</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Store
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Heart Surgery</a></li>
+                        <li><a href="#">Eye Surgery</a></li>
+                        <li><a href="#">Plastic Surgery</a></li>
+                    </ul>
+                </li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <strong>Chief Yif</strong>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>Yifei Gao</strong></p>
+                                        <p class="text-left small">yig216@lehigh.edu</p>
+                                        <p class="text-left">
+                                            <a onclick="window.location = 'http://localhost:8383/skopos/stats.html'" href="#" class="btn btn-primary btn-block btn-sm">Account</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a onclick="window.location = 'http://localhost:8383/skopos/index.html'" href="#" class="btn btn-danger btn-block">Log Out</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="menu" class="col-sm-3">
+            <div class="panel list-group">
+                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu">Heart Surgery <span class="label label-info">1</span> <span class="glyphicon glyphicon-heart pull-right"></span></a>
+                <div id="sm" class="sublinks collapse">
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm1" data-parent="#sm"><span class="glyphicon glyphicon-chevron-right"></span> Beginner</a>
+                    <div id="sm1" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Coronary Revascularization</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Arrhythmia Treatment</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Heart Transplant</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm2" data-parent="#sm"><span class="glyphicon glyphicon-chevron-right"></span> Intermediate</a>
+                    <div id="sm2" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Coronary Artery Bypass Grafting</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Heart Valve Repair or Replacement</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Transmyocardial Laser Revascularization</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm3" data-parent="#sm"><span class="glyphicon glyphicon-chevron-right"></span> Hard</a>
+                    <div id="sm3" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Family Distrust</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Friendship Termination</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Relationship Breakup</a>
+                    </div>
+                </div>
+                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">Eye Surgery <span class="label label-info">3</span> <span class="glyphicon glyphicon-eye-open pull-right"></span></a>
+                <div id="sl" class="sublinks collapse">
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl1" data-parent="#sl"><span class="glyphicon glyphicon-chevron-right"></span> Beginner</a>
+                    <div id="sl1" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Cataract surgery</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> YAG Laser Capsulotomy</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Eye muscle (strabismus) surgery</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl2" data-parent="#sl"><span class="glyphicon glyphicon-chevron-right"></span> Intermediate</a>
+                    <div id="sl2" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Entropion/Ectropion Repair</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Blocked Tear Duct Surgery</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Ptosis Repair</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl3" data-parent="#sl"><span class="glyphicon glyphicon-chevron-right"></span> Hard</a>
+                    <div id="sl3" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Vitrectomy</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Pneumatic Retinopexy</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Scleral Buckling surgery</a>
+                    </div>
+                </div>
+                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sk" data-parent="#menu">Heart Surgery <span class="label label-info">new</span> <span class="glyphicon glyphicon-heart-empty pull-right"></span></a>
+                <div id="sk" class="sublinks collapse">
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sk1" data-parent="#sk"><span class="glyphicon glyphicon-chevron-right"></span> Beginner</a>
+                    <div id="sm1" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Breast Lift (Mastopexy)</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Face Lift</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Tummy Tuck</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sk2" data-parent="#sk"><span class="glyphicon glyphicon-chevron-right"></span> Intermediate</a>
+                    <div id="sk2" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Liposuction</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Eyelid Surgery (Blepharoplasty)</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Nose Reshaping (Rhinoplasty)</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sk3" data-parent="#sk"><span class="glyphicon glyphicon-chevron-right"></span> Hard</a>
+                    <div id="sk3" class="sublinks collapse">
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Breast Augmentation </a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Butt Augmentation</a>
+                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> Forehead Lift</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       	<div id="gallery" class="col-md-9">
+            <div class="col-md-3 panel panel-preview">
+                <div class="panel-image img-responsive">
+                    <img onclick="window.location = 'http://localhost:8383/skopos/heart/index.html'" class="img-responsive panel-image-preview" src="http://previewcf.turbosquid.com/Preview/2014/07/06__21_31_46/X-Section_Heart_B.jpgc3b9b202-e8fd-4de0-8461-d0053af7b55dLarge.jpg" />                        
+                    <label for="toggle-4"></label>
+                </div>
+                <input type="checkbox" id="toggle-4" checked class="panel-image-toggle">
+                <div class="panel-body">
+                    <p>Heart Failure</p>
+                    <p>Survived</p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download"><span>CASE 1</span></a>
+                    <a href="#share"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+            </div>
+            <div class="col-md-3 panel panel-preview">
+                <div class="panel-image img-responsive">
+                    <img onclick="window.location = 'http://localhost:8383/skopos/vrpage.html'" class="img-responsive panel-image-preview" src="http://previewcf.turbosquid.com/Preview/2014/05/24__14_11_23/kid.jpg32c75f1a-760a-4f7e-8f8f-504d1129152fLarger.jpg" />                        
+                    <label for="toggle-4"></label>
+                </div>
+                <input type="checkbox" id="toggle-4" checked class="panel-image-toggle">
+                <div class="panel-body">
+                    <p>Heart Failure</p>
+                    <p>Survived</p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download"><span>CASE 2</span></a>
+                    <a href="#share"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+            </div>
+            <div class="col-md-3 panel panel-preview">
+                <div class="panel-image img-responsive">
+                    <img onclick="window.location = 'http://localhost:8383/skopos/vrpage2.html'" class="img-responsive panel-image-preview" src="https://s-media-cache-ak0.pinimg.com/736x/24/f4/f5/24f4f5d8765e9139abf17a508e7a5de9.jpg" />                        
+                    <label for="toggle-4"></label>
+                </div>
+                <input type="checkbox" id="toggle-4" checked class="panel-image-toggle">
+                <div class="panel-body">
+                    <p>Heart Failure</p>
+                    <p>Survived</p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download"><span>CASE 3</span></a>
+                    <a href="#share"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+            </div>
+            <div class="col-md-3 panel panel-preview">
+                <div class="panel-image img-responsive">
+                    <img onclick="changeCSS();" class="img-responsive panel-image-preview" src="http://previewcf.turbosquid.com/Preview/2014/05/26__13_27_44/400400.jpg431dfdb7-3c5b-44af-8ef3-56033f37964bLarger.jpg" />                        
+                    <label for="toggle-4"></label>
+                </div>
+                <input type="checkbox" id="toggle-4" checked class="panel-image-toggle">
+                <div class="panel-body">
+                    <p>Heart Failure</p>
+                    <p>Survived</p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download"><span>CASE 4</span></a>
+                    <a href="#share"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+            </div>
+
+        </div>        
+
+    </body>
+</html>
